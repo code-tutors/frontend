@@ -1,0 +1,7 @@
+<p>my name is {{name}}</p>
+<button type="button" class="btn btn-primary" [disabled]="buttonDisabled" (click)="onChangeName()">Change Name</button>
+<br/>
+<input (input)="onInput($event)">
+<input [(ngModel)]="name">
+<button type="button" class="btn btn-success" (click)="onChangeName()" *ngIf="buttonDisabled"> Enable Change Name</button>
+
